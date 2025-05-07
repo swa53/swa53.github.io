@@ -1,19 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Landing Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Under Maintenance</title>
   <style>
-    body { font-family: sans-serif; text-align: center; margin-top: 50px; }
-    a { display: block; margin: 10px; text-decoration: none; color: #007BFF; font-size: 18px; }
-    a:hover { text-decoration: underline; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #1a1a1a;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+      color: #ffcc00;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #ccc;
+      margin-bottom: 2em;
+    }
+
+    .loader {
+      border: 6px solid #333;
+      border-top: 6px solid #ffcc00;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 1.5em;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
   </style>
 </head>
 <body>
-  <h1>Hello 👋 I'm John</h1>
-  <p>Welcome to my links!</p>
-  <a href="https://instagram.com/yourname" target="_blank">Instagram</a>
-  <a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a>
-  <a href="mailto:you@example.com">Email Me</a>
+  <div class="loader"></div>
+  <h1>We'll Be Back Soon!</h1>
+  <p>Our website is currently undergoing scheduled maintenance.<br />
+  Thank you for your patience.</p>
+  <footer>&copy; 2025 Your Company Name</footer>
 </body>
 </html>
